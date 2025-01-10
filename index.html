@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe UI">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--emantic HTML Structure:
+The webpage uses semantic HTML elements (e.g., <header>, <section>, <article>, <footer>).
+CSS Styling:
+The page is styled using an external CSS file.
+Fonts, colors, and layout are customized.
+CSS selectors (class, ID, element, and universal) are used appropriately.
+Images:
+The page includes a picture of the student in the "About" section.
+Two images are used in the "Projects" section, with descriptions.
+Contact Section:
+The contact section has a form with input fields for name, email, and message.
+There are working hyperlinks to the student's email and phone number.
+Responsive Layout:
+The page should be responsive and display properly on different screen sizes.
+GitHub Pages Deployment:
+The page is deployed on GitHub Pages and accessible via a shared URL.-->
+    <header>
+        <!--Create navbar-->
+        <nav>
+            <!--Projects/about/contact + git/linkedin-->
+        </nav>
+        
+    </header>
+    <main>
+        <!--Create section about, picture and bio-->
+        <!--bio = article ?  button linking to fake CV ? -->
+ 
+    <section>
+        <div id="card-container" class="card">
+            <img id="profile-img" src="assets/images/profile-picture.jpg" alt="Profile picture" style="width:100%">
+            <h1 class="h1-profile">Kafka Hibino</h1>
+            <p class="title">Web Developer</p>
+            <a href="https://github.com/mikyoch" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gennady-korotkevich-099316206/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="tel:+447845714956" class="button">Call me</a>
+        </div>
+
+
+   <!-- <h1>Kafka Hibino</h1>
+    <img src="assets/images/profile-picture.jpg" alt="Profile picture">
+   -->
+    <article id="about">
+    <p><b>About me</b></p>
+    <p id="bio">Web developer with experience in designing, building, and implementing applications and new user features. Passionate about working with other developers to build products that can help millions of people. Always ready to broaden my technical skills and to tackle complex challenges.</p>
+    </article>
+    <a href="https://s3.eu-west-2.amazonaws.com/gpena.co.uk/web-developer-cv-example.docx" type="submit" class="resume" target="_blank">Resume</a>
+    
+
+   </section>  
+
+  <!--Create section projects two images of imaginary projects you’ve worked on, with a brief description of each-->
+  <!--buttons code + demo linking to fake projects ?-->
+  <!--projects descritption = article ?  -->
+
+<section id="projects">
+    <div class="container-projects">
+        <div class="wrapper-projects">
+          <div class="banner-image-project-1"> </div>
+          <h1 class="projects">Visual studio code editor</h1>
+          <p class="projects-p">Lightweight but powerful source code editor</p>
+         </div>
+         <div class="button-wrapper"> 
+         <button onClick="javascript:window.open('https://github.com/microsoft/vscode', '_blank');" class="btn outline">See code</button>
+           <button onClick="javascript:window.open('https://code.visualstudio.com/download', '_blank');" class="btn fill">Download</button>
+         </div>
+           </div>
+       </div>
+       <div class="container-projects">
+        <div class="wrapper-projects">
+          <div class="banner-image-project-2"> </div>
+          <h1>React native for Windows</h1>
+          <p>Cross-platform desktop framework for Windows</p>
+         </div>
+         <div class="button-wrapper"> 
+         <button onClick="javascript:window.open('https://github.com/microsoft/react-native-windows', '_blank');" class="btn outline">See code</button>
+           <button onClick="javascript:window.open('https://apps.microsoft.com/detail/9npg0b292h4r?amp%3Bgl=us&hl=en-US&gl=GB', '_blank');" class="btn fill">Download</button>
+         </div>
+           </div>
+       </div>
+</section>
+
+<section id="contact">
+    <p id="contact-p"><b>Contact Form</b></p>
+    <div class="container">
+        <form action="#">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+          <label for="email">Your Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Your last name.." />
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+    </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <!--copiright + number +email + git/linkedin -->
+        <address>
+            <p>CALL</p>
+            <a class="email" href="mailto:dummy@gmail.com">dummy@gmail.com</a>
+            <p>EMAIL</p>
+            <a class="telf" href="tel:+447845714956">+44 7845 714956</a>
+        </addres>
+    </footer>
+
+    <!--Extra! add backgound color + images ?-->
+
+<!--Deploy your portfolio page using GitHub Pages to make it live online add README with link to github pages + share link to github pages qith Jason-->
+</body>
+</html>
