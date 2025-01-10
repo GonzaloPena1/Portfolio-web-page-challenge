@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe UI">
     <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4a002b7226.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--emantic HTML Structure:
@@ -26,13 +26,23 @@ Responsive Layout:
 The page should be responsive and display properly on different screen sizes.
 GitHub Pages Deployment:
 The page is deployed on GitHub Pages and accessible via a shared URL.-->
-    <header>
-        <!--Create navbar-->
-        <nav>
-            <!--Projects/about/contact + git/linkedin-->
-        </nav>
-        
-    </header>
+<header>
+    <div class="logo">
+      <h1 class="logo-text">Portfolio</h1>
+      <button class="hamburger-icon">
+        <label for="dropdown">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </label>
+        <input type="checkbox" id="dropdown" />
+      </button>
+    </div>
+    <ul class="navigation">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact-p">Contact</a></li>
+    </ul>
+  </header>
     <main>
         <!--Create section about, picture and bio-->
         <!--bio = article ?  button linking to fake CV ? -->
@@ -42,8 +52,8 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
             <img id="profile-img" src="assets/images/profile-picture.jpg" alt="Profile picture" style="width:100%">
             <h1 class="h1-profile">Kafka Hibino</h1>
             <p class="title">Web Developer</p>
-            <a href="https://github.com/mikyoch" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gennady-korotkevich-099316206/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/mikyoch" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gennady-korotkevich-099316206/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="tel:+447845714956" class="button">Call me</a>
         </div>
 
@@ -92,9 +102,9 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
 </section>
 
 <section id="contact">
-    <p id="contact-p"><b>Contact Form</b></p>
+    <h2 id="contact-p">Contact Form</</h2>
     <div class="container">
-        <form action="#">
+        <form class="contact-form" action="#">
       
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your first name..">
@@ -117,7 +127,7 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
         
     <footer class="footer">
         <address class="footer-basic">
-            <div class="social"><a href="https://github.com/mikyoch" target="_blank"><i class="fa fa-github"></i><a href="https://www.linkedin.com/in/gennady-korotkevich-099316206/" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+            <div class="social"><a href="https://github.com/mikyoch" target="_blank"><i class="fa-brands fa-github"></i><a href="https://www.linkedin.com/in/gennady-korotkevich-099316206/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
                 <ul class="list-inline">
                     <li class="telf" href="tel:+447845714956">+44 7845 714956</li></div>
                     <li class="email" href="mailto:dummy@gmail.com">dummy@gmail.com</li>
