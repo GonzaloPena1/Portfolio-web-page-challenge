@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/*Default*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url(https://media.istockphoto.com/id/2182719714/photo/digital-gears-sign-innovations-technology-and-development-data-tunnel.jpg?s=2048x2048&w=is&k=20&c=R1n0k9SfAZ5sEWYk4C1tnX-QavQxQuVF7S1-pS60tg8=);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/*Header - Navigation bar*/
+.hamburger-icon {
+  display: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(130, 7, 213, 0.9);
+}
+.logo-text {
+  color: white;
+}
+
+.hamburger-icon {
+  border: none;
+  background-color: transparent;
+}
+
+.hamburger-icon .fa-bars,
+.hamburger-icon .fa-x {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hamburger-icon input[type="checkbox"] {
+  appearance: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+.navigation a {
+  color: white;
+  font-size: 20px;
+}
+
+/*Frist section - About */
+.card {
+  box-shadow: 0 8px 16px 0 rgb(161, 26, 245);
+  max-width: 340px;
+  text-align: center;
+  margin: 20px;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  margin-bottom: 50px;
+  margin-top: 160px;
+}
+
+#profile-img {
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+
+.h1-profile {
+  color: white;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0, 212, 255, 0.9);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+#about {
+  margin-left: 20px;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+#bio {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+#about-2 {
+  display: none;
+}
+
+.resume {
+  background-color: rgba(0, 212, 255, 0.9);
+  box-shadow: 0 8px 16px 0 rgb(161, 26, 245);
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.resume:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/*Second section - Projects */
+
+.container-projects {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 38px;
+  filter: drop-shadow(0 10px 20px rgb(161, 26, 245));
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+  height: 25%;
+  margin-left: 20px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-projects {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-image-project-1 {
+  background-image: url(https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+}
+.banner-image-project-2 {
+  background-image: url(https://raw.githubusercontent.com/microsoft/react-native-windows/main/.github/hero2.png);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+}
+
+projects-p {
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper {
+  margin-top: 18px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgb(161, 26, 245);
+  border-color: rgb(161, 26, 245);
+  transition: all 0.3s ease;
+}
+
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fill:hover {
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+  transition: all 0.3s ease;
+}
+
+/* Third section -Contact me*/
+#contact-p {
+  margin-left: 20px;
+  color: White;
+  margin-top: 50px;
+}
+
+.contact-form {
+  color: black;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgba(0, 212, 255, 0.9);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.7;
+  transform: scale(1.125);
+  transition: all 0.3s ease;
+}
+
+.container {
+  box-shadow: 0 8px 16px 0 rgb(161, 26, 245);
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: rgba(130, 7, 213, 0.9);
+  color: white;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.email {
+  cursor: pointer;
+  transition: margin-left 750ms;
+}
+.email:hover {
+  margin-left: 10px;
+}
+
+.telf {
+  cursor: pointer;
+  transition: margin-left 750ms;
+}
+.telf:hover {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 901px) {
+  /*Frist section - About*/
+
+  #bio {
+    width: 50%;
+  }
+
+  /*About  Second section - Projects*/
+  .container-projects {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 28%;
+    height: 28%;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .outline {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  /*Frist section - About */
+  .card {
+    box-shadow: 0 8px 16px 0 rgb(161, 26, 245);
+    max-width: 340px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 160px;
+  }
+
+  #about {
+    display: none;
+  }
+
+  #about-2 {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+
+  .resume {
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  /*Second section - Projects */
+
+  .container-projects {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 38%;
+    height: 38%;
+    margin-left: 200px;
+    margin-top: 30px;
+    position: relative;
+  }
+  .outline {
+    margin-bottom: 15px;
+  }
+
+  /* Third section -Contact me*/
+
+  #contact-p {
+    color: white;
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+    width: 60%;
+    margin-left: 140px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Header - Navigation bar*/
+  header {
+    display: block;
+  }
+  .navigation {
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .fa-x {
+    display: none;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
+    margin-top: 1rem;
+    height: 100px;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+    display: none;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+    display: inline-block;
+  }
+
+  /*Frist section - About */
+  .card {
+    max-width: 340px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 160px;
+  }
+
+  #about {
+    display: none;
+  }
+
+  #bio-2 {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  #about-2 {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+
+  .resume {
+    margin-left: 145px;
+  }
+  /*Second section - Projects */
+
+  .container-projects {
+    display: block;
+    width: 58%;
+    height: 58%;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 100px;
+  }
+
+  .outline {
+    margin-bottom: 15px;
+  }
+
+  /* Third section -Contact me*/
+
+  #contact-p {
+    color: white;
+
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+    width: 80%;
+    margin-left: 35px;
+  }
+}

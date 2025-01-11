@@ -10,22 +10,7 @@
     <script src="https://kit.fontawesome.com/4a002b7226.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--emantic HTML Structure:
-The webpage uses semantic HTML elements (e.g., <header>, <section>, <article>, <footer>).
-CSS Styling:
-The page is styled using an external CSS file.
-Fonts, colors, and layout are customized.
-CSS selectors (class, ID, element, and universal) are used appropriately.
-Images:
-The page includes a picture of the student in the "About" section.
-Two images are used in the "Projects" section, with descriptions.
-Contact Section:
-The contact section has a form with input fields for name, email, and message.
-There are working hyperlinks to the student's email and phone number.
-Responsive Layout:
-The page should be responsive and display properly on different screen sizes.
-GitHub Pages Deployment:
-The page is deployed on GitHub Pages and accessible via a shared URL.-->
+  <!-- Header - Navigation bar -->
 <header>
     <div class="logo">
       <h1 class="logo-text">Portfolio</h1>
@@ -44,9 +29,9 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
     </ul>
   </header>
     <main>
-        <!--Create section about, picture and bio-->
-        <!--bio = article ?  button linking to fake CV ? -->
- 
+  
+<!--Frist section - About -->
+
     <section>
         <div id="card-container" class="card">
             <img id="profile-img" src="assets/images/profile-picture.jpg" alt="Profile picture" style="width:100%">
@@ -57,22 +42,19 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
             <a href="tel:+447845714956" class="button">Call me</a>
         </div>
 
-
-   <!-- <h1>Kafka Hibino</h1>
-    <img src="assets/images/profile-picture.jpg" alt="Profile picture">
-   -->
     <article id="about">
     <h2>About me</h2>
     <p id="bio">Web developer with experience in designing, building, and implementing applications and new user features. Passionate about working with other developers to build products that can help millions of people. Always ready to broaden my technical skills and to tackle complex challenges.</p>
     </article>
-    <a href="https://s3.eu-west-2.amazonaws.com/gpena.co.uk/web-developer-cv-example.docx" type="submit" class="resume" target="_blank">Resume</a>
-    
-
+    <article id="about-2">
+      <h2>About me</h2>
+      <p id="bio-2">Web developer with experience in designing and building applications.</p>
+      </article>
+    <div class="resume"><a href="https://s3.eu-west-2.amazonaws.com/gpena.co.uk/web-developer-cv-example.docx" type="submit"  target="_blank">Resume</a></div>
+   
    </section>  
 
-  <!--Create section projects two images of imaginary projects you’ve worked on, with a brief description of each-->
-  <!--buttons code + demo linking to fake projects ?-->
-  <!--projects descritption = article ?  -->
+  <!-- Second section - Projects -->
 
 <section id="projects">
     <div class="container-projects">
@@ -101,6 +83,7 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
        </div>
 </section>
 
+<!-- Third section -Contact me -->
 <section id="contact">
     <h2 id="contact-p">Contact Form</</h2>
     <div class="container">
@@ -121,24 +104,22 @@ The page is deployed on GitHub Pages and accessible via a shared URL.-->
       </div>
     </section>
     </main>
+
     <!--Footer-->
    
-        <!--copiright + number +email + git/linkedin -->
-        
     <footer class="footer">
         <address class="footer-basic">
             <div class="social"><a href="https://github.com/mikyoch" target="_blank"><i class="fa-brands fa-github"></i><a href="https://www.linkedin.com/in/gennady-korotkevich-099316206/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
                 <ul class="list-inline">
-                    <li class="telf" href="tel:+447845714956">+44 7845 714956</li></div>
-                    <li class="email" href="mailto:dummy@gmail.com">dummy@gmail.com</li>
+                    <li><a class="telf" href="tel:+447845714956">+44 7845 714956</a></li>
+                    <li><a class="email" href="mailto:dummy@gmail.com">dummy@gmail.com</a></li>
+                    
                 </ul>
-            <p class="copyright">Company Name © 2025</p>
+            <p class="copyright">Kafka Hibino Portfolio © 2025</p>
         </addres>
     </footer>
         
     
-
-    <!--Extra! add backgound color + images ?-->
 
 <!--Deploy your portfolio page using GitHub Pages to make it live online add README with link to github pages + share link to github pages qith Jason-->
 </body>
