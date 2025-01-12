@@ -1,6 +1,6 @@
 # Portfolio website challenge
 
-I have applied the skills I’ve on week 1 Step8Up Bootcamp.
+I have applied the skills I’ve learned on week 1 Step8Up Bootcamp.
 
 [Live website](https://gonzalopena1.github.io/Portfolio-web-page-challenge/)
 
